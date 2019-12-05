@@ -16,12 +16,13 @@ def main():
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    persons = [{'name': 'John', 'age': 25, 'job': 'taxi driver'},
-               {'name': 'Alice', 'age': 30, 'job': 'painter'},
-               {'name': 'Max', 'age': 36, 'job': 'photographer'},
-               {'name': 'Julia', 'age': 33, 'job': 'web developer'},
-               {'name': 'Tiffany', 'age': 29, 'job': 'cook'},
-              ]
+    persons = [
+        {'name': 'John', 'age': 25, 'job': 'taxi driver'},
+        {'name': 'Alice', 'age': 30, 'job': 'painter'},
+        {'name': 'Max', 'age': 36, 'job': 'photographer'},
+        {'name': 'Julia', 'age': 33, 'job': 'web developer'},
+        {'name': 'Tiffany', 'age': 29, 'job': 'cook'},
+    ]
 
     with open('persons.csv', 'w', encoding='utf-8', newline='') as file:
         fields = ['name', 'age', 'job']
